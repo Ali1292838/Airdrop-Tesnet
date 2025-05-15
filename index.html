@@ -26,16 +26,16 @@
       position: absolute;
       display: flex;
       flex-direction: column;
-      width: 169px;
+      width: 170px;
       border-radius: 10px;
       overflow: hidden;
       box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
     }
 
-    .top-left { top: 60px; left: 15px; }
-    .top-right { top: 60px; right: 15px; }
-    .bottom-left { bottom: 138px; left: 15px; }
-    .bottom-right { bottom: 138px; right: 15px; }
+    .top-left { top: 80px; left: 60px; }
+    .top-right { top: 80px; right: 60px; }
+    .bottom-left { bottom: 80px; left: 60px; }
+    .bottom-right { bottom: 80px; right: 60px; }
 
     .corner-title {
       background: rgba(0, 0, 128, 0.7);
@@ -46,21 +46,11 @@
       border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     }
 
-    /* Judul dengan warna khusus */
-    .corner-title.og-labs {
-      color: #00bfff; /* Emas */
-    }
-
-    .corner-title.mega-eth {
-      color: #00bfff; /* Cyan */
-    }
-
-    .corner-title.rise {
-      color: #00bfff; /* Pink */
-    }
-
+    .corner-title.og-labs,
+    .corner-title.mega-eth,
+    .corner-title.rise,
     .corner-title.omega {
-      color: #00bfff; /* Lime Green */
+      color: #00bfff;
     }
 
     .corner-box {
@@ -94,13 +84,26 @@
     .corner-box a:hover {
       color: #ffffff;
     }
+
+    @media (max-width: 768px) {
+      .corner-column {
+        width: 45%;
+      }
+
+      .top-left, .bottom-left {
+        left: 5%;
+      }
+
+      .top-right, .bottom-right {
+        right: 5%;
+      }
+    }
   </style>
 </head>
 <body>
 
   <h1>TESNET AIRDROP</h1>
 
-  <!-- Atas Kiri -->
   <div class="corner-column top-left">
     <div class="corner-title og-labs">OG LABS</div>
     <div class="corner-box"><a href="#">RISE</a></div>
@@ -109,7 +112,6 @@
     <div class="corner-box"><a href="#">EPSILON</a></div>
   </div>
 
-  <!-- Atas Kanan -->
   <div class="corner-column top-right">
     <div class="corner-title mega-eth">MEGA ETH</div>
     <div class="corner-box"><a href="#">MEGAETH</a></div>
@@ -118,7 +120,6 @@
     <div class="corner-box"><a href="#">TITAN</a></div>
   </div>
 
-  <!-- Bawah Kiri -->
   <div class="corner-column bottom-left">
     <div class="corner-title rise">RISE</div>
     <div class="corner-box"><a href="#">RISE</a></div>
@@ -127,12 +128,11 @@
     <div class="corner-box"><a href="#">GAMMA</a></div>
   </div>
 
-  <!-- Bawah Kanan -->
   <div class="corner-column bottom-right">
     <div class="corner-title omega">OMEGA</div>
     <div class="corner-box"><a href="#">0G</a></div>
-    <div class="corner-box"><a href="#">SIA</a></div>
-    <div class="corner-box"><a href="#">TTA</a></div>
+    <div class="corner-box"><a href="#">SIGMA</a></div>
+    <div class="corner-box"><a href="#">THETA</a></div>
     <div class="corner-box"><a href="#">PHI</a></div>
   </div>
 
